@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('product_desc');
             $table->decimal('product_price',10,0);
             $table->string('product_design');
-            
+            $table->integer('product_status')->default(0);
             $table->timestamps();
         });
     }
